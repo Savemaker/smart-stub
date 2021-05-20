@@ -1,0 +1,39 @@
+INSERT INTO RULE (XPATH_QUERY, XPATH_QUERY_RULE_WEIGHT, XML_RESPONSE, XPATH_MAP, APPLY_FUNCTION) VALUES ('boolean(string(ListOfAtcOpportunityPos/AtcOpportunityPos/ListOfAtcDecision/AtcDecision/CheckType) = ''Full'')', 10, '<RTDMResponse>
+   <ErrorDescription>
+      <ErrorCode>0</ErrorCode>
+      <ErrorText/>
+   </ErrorDescription>
+   <ResponseType>Decision</ResponseType>
+   <ResultCode>0</ResultCode>
+   <JMSId>D2386ABB-C4C6-4e7d-8B99-27C9DD3F01F2</JMSId>
+   <RTDMDecision>
+      <InteractionId>11209448069</InteractionId>
+      <ApplicationId>5732762</ApplicationId>
+      <DecisionCode>1</DecisionCode>
+      <DecisionBlock/>
+      <MaxPayment>8000</MaxPayment>
+      <NormScore>1</NormScore>
+      <MaxLimit>400000</MaxLimit>
+      <FocusGroup/>
+      <DecisionComment>Одобрено</DecisionComment>
+      <PilotAnnotation>ЗАГЛУШКА 100</PilotAnnotation>
+      <PassVerificationFlag>N</PassVerificationFlag>
+      <PaymentToIncome/>
+      <ListOfAltOffers>
+         <AltOffer>
+            <Priority>1</Priority>
+            <PRODUCT_C>CASH_MAIN</PRODUCT_C>
+            <CREDIT_TERM_REC>24</CREDIT_TERM_REC>
+            <AltOfferMaxPayment>20000</AltOfferMaxPayment>
+            <AltOfferMaxLimit>516000</AltOfferMaxLimit>
+            <OfferType>Street</OfferType>
+         </AltOffer>
+      </ListOfAltOffers>
+      <ListOfDataQuality>
+         <DataQuality>
+            <OpportunityContactId>10104312</OpportunityContactId>
+            <DataQuality>Sufficient</DataQuality>
+         </DataQuality>
+      </ListOfDataQuality>
+   </RTDMDecision>
+</RTDMResponse>', 'RTDMResponse/ErrorDescription/ErrorCode:ListOfAtcOpportunityPos/AtcOpportunityPos/AdvCampaign', 'RTDMResponse/RTDMDecision/DecisionComment:getCurrentDate');
